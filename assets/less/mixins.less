@@ -1,0 +1,76 @@
+// Mixins
+
+.gradient(@direction, @color1, @color2, @color3)
+{
+    background-image: linear-gradient(@direction, @color1, @color2, @color3);
+    background-image: -moz-linear-gradient(@direction, @color1, @color2, @color3);
+    background-image: -webkit-linear-gradient(@direction, @color1, @color2, @color3);
+    background-image: -o-linear-gradient(@direction, @color1, @color2, @color3);
+}
+
+.radius(@valeur)
+{
+    -moz-border-radius: @valeur;
+    -o-border-radius: @valeur;
+    -webkit-border-radius: @valeur;
+    border-radius: @valeur;
+}
+
+.custom-span-btn()
+{
+    font-family: poppins;
+    font-size: 11px;
+    cursor: pointer;
+    color: #1e83c3;
+    font-weight: 700;
+    display: block;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.multi-select()
+{
+    background-image: none !important;
+    float: left !important;
+    width: 100% !important;
+    font-size: 11px !important;
+    color: #888 !important;
+    font-family: lato !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,.04) !important;
+}
+
+
+.oodge-bt-bg()
+{
+    background-color: @rouge-bordo;
+}
+
+.checkbox()
+{
+    width: 14px;
+    height: 14px;
+}
+
+.button()
+{
+    font-family: poppins;
+    background-color: #ea1b25;
+    border: 1px solid #ea1b25;
+    color: white;
+    font-weight: 600;
+    padding: 8px 25px;
+    &:hover
+    {
+        background-color: transparent;
+        color: #ea1b25;
+        border: 1px solid ea1b25;
+    }
+}
+
+.marge()
+{
+  margin-top: 100px;
+}
